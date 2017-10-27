@@ -5,5 +5,19 @@
   "main": "index.js",
   "repository": "git@github.com:leonardofaria/leozera-ui.git",
   "author": "Leonardo Faria <leonardofaria@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.13",
+    "@storybook/addon-actions": "^3.2.13",
+    "@storybook/addon-links": "^3.2.13"
+  }
 }
