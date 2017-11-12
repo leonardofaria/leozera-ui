@@ -7,3 +7,8 @@
 ## Inspirations
 
 - [AtlasKit](https://atlaskit.atlassian.com/)
+- [Semantic UI](https://react.semantic-ui.com/)
+
+## Todo
+
+I have created a [Github project](https://github.com/leonardofaria/leozera-ui/projects/1) to list what is next.
