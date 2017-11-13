@@ -9,7 +9,10 @@
   "scripts": {
     "start": "yarn storybook",
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs",
+    "storybook:build": "build-storybook -c .storybook -o docs",
+    "deploy:github": "gh-pages -d docs",
+    "deploy": "yarn storybook:build && yarn deploy:github",
+
     "lint:js": "eslint lib"
   },
   "dependencies": {
@@ -42,6 +45,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-react": "^7.4.0",
+    "gh-pages": "^1.0.0",
     "node-sass": "^4.6.1",
     "postcss-loader": "^2.0.8",
     "resolve-url-loader": "^2.2.0",
