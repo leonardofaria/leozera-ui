@@ -6,8 +6,12 @@
 
 ## Inspirations
 
+- [Ant Design](https://ant.design/)
 - [AtlasKit](https://atlaskit.atlassian.com/)
+- [Belly](https://nikgraf.github.io/belle/)
+- [Grommet](http://grommet.io/)
 - [Semantic UI](https://react.semantic-ui.com/)
+- [UI React Kit](http://reactsymbols.com/)
 
 ## Todo
 
