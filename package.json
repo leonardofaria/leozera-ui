@@ -22,7 +22,8 @@
     "build:js": "cross-env NODE_ENV=production babel lib/components -d dist --ignore '**/*.spec.js,**/*.stories.js'",
     "build:css": "node scripts/buildSass.js",
     "build:copy-files": "node scripts/copyBuildFiles.js",
-    "publish": "yarn version && yarn build:lib && npm publish dist"
+    "publish": "yarn version && yarn build:lib && npm publish dist",
+    "postpublish": "git push origin master --tags"
   },
   "peerDependencies": {
     "react": "^16.2.0",
