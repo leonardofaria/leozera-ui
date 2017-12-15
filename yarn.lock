@@ -23,12 +23,12 @@
   dependencies:
     global "^4.3.2"
 
-"@storybook/addon-info@^3.2.15":
-  version "3.2.15"
-  resolved "https://registry.npmjs.org/@storybook/addon-info/-/addon-info-3.2.15.tgz#bc310fb54801657a687329729ad9dac426f6b9ab"
+"@storybook/addon-info@^3.2.17":
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-3.2.17.tgz#a1a612ca323c360089dd4d49aca8abf902d4929d"
   dependencies:
-    "@storybook/addons" "^3.2.15"
-    "@storybook/components" "^3.2.15"
+    "@storybook/addons" "^3.2.17"
+    "@storybook/components" "^3.2.17"
     babel-runtime "^6.26.0"
     global "^4.3.2"
     marksy "^2.0.0"
@@ -69,6 +69,10 @@
   version "3.2.15"
   resolved "https://registry.npmjs.org/@storybook/addons/-/addons-3.2.15.tgz#120fc3e34454b9e6c779f25b945d354511168abc"
 
+"@storybook/addons@^3.2.17":
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.2.17.tgz#5c2ece24c5f7fbf7cedf4cfe503c5e356543e62d"
+
 "@storybook/channel-postmessage@^3.2.15":
   version "3.2.15"
   resolved "https://registry.npmjs.org/@storybook/channel-postmessage/-/channel-postmessage-3.2.15.tgz#34ef971cd231a4c034c293693bb5b78c83a1b7cb"
@@ -84,6 +88,14 @@
 "@storybook/components@^3.2.15":
   version "3.2.15"
   resolved "https://registry.npmjs.org/@storybook/components/-/components-3.2.15.tgz#238e8faf0f5668534dea98868327760b24139460"
+  dependencies:
+    glamor "^2.20.40"
+    glamorous "^4.11.0"
+    prop-types "^15.6.0"
+
+"@storybook/components@^3.2.17":
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.2.17.tgz#318c6e6a1d3ffb469523b5dcfee775639ccc500b"
   dependencies:
     glamor "^2.20.40"
     glamorous "^4.11.0"
