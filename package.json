@@ -36,7 +36,7 @@
     "@storybook/addon-centered": "^3.2.15",
     "@storybook/addon-info": "^3.2.15",
     "@storybook/addon-knobs": "^3.2.15",
-    "@storybook/addon-options": "^3.2.15",
+    "@storybook/addon-options": "^3.2.18",
     "@storybook/addons": "^3.2.15",
     "@storybook/react": "^3.2.15",
     "autoprefixer": "^7.1.6",
