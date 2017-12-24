@@ -59,15 +59,19 @@
   dependencies:
     "@storybook/addons" "^3.2.15"
 
-"@storybook/addon-options@^3.2.15":
-  version "3.2.15"
-  resolved "https://registry.npmjs.org/@storybook/addon-options/-/addon-options-3.2.15.tgz#efbae32f711db284a651a7e54b498ea65620b589"
+"@storybook/addon-options@^3.2.19":
+  version "3.2.19"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.2.19.tgz#d25426a6a3fa15338e50630647abe4a1ad397c09"
   dependencies:
-    "@storybook/addons" "^3.2.15"
+    "@storybook/addons" "^3.2.19"
 
 "@storybook/addons@^3.2.15":
   version "3.2.15"
   resolved "https://registry.npmjs.org/@storybook/addons/-/addons-3.2.15.tgz#120fc3e34454b9e6c779f25b945d354511168abc"
+
+"@storybook/addons@^3.2.19":
+  version "3.2.19"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.2.19.tgz#cddb816f75ca3a45dca3249e5ff11d5dba2f6064"
 
 "@storybook/channel-postmessage@^3.2.15":
   version "3.2.15"
