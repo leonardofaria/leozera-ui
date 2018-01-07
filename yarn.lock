@@ -17,9 +17,9 @@
     react-inspector "^2.2.1"
     uuid "^3.1.0"
 
-"@storybook/addon-centered@^3.2.15":
-  version "3.2.15"
-  resolved "https://registry.npmjs.org/@storybook/addon-centered/-/addon-centered-3.2.15.tgz#931e5bb01960496fdff1a603763abb309065fcde"
+"@storybook/addon-centered@^3.3.4":
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-centered/-/addon-centered-3.3.4.tgz#4b9152facff2b54723d53de723cea3794f555f0c"
   dependencies:
     global "^4.3.2"
 
