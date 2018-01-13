@@ -59,11 +59,9 @@
   dependencies:
     "@storybook/addons" "^3.2.15"
 
-"@storybook/addon-options@^3.2.15":
-  version "3.2.15"
-  resolved "https://registry.npmjs.org/@storybook/addon-options/-/addon-options-3.2.15.tgz#efbae32f711db284a651a7e54b498ea65620b589"
-  dependencies:
-    "@storybook/addons" "^3.2.15"
+"@storybook/addon-options@^3.3.9":
+  version "3.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.3.9.tgz#8dca85ae5c6713ca13bead0e8c39b23c7e2138c0"
 
 "@storybook/addons@^3.2.15":
   version "3.2.15"
