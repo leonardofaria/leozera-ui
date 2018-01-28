@@ -1,9 +1,32 @@
 {
   "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
+    "react",
+    "stage-0",
+    "env"
   ],
-  "plugins": [
-    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": false }]
-  ],
+  "env": {
+    "development": {
+      "plugins": [
+        ["transform-object-rest-spread"],
+        ["transform-react-display-name"],
+        ["react-transform", {
+          "transforms": [{
+            "transform": "react-transform-hmr",
+            "imports": ["react"],
+            "locals": ["module"]
+          }, {
+            "transform": "react-transform-catch-errors",
+            "imports": ["react", "redbox-react"]
+          }]
+        }],
+        ["babel-plugin-react-docgen", { "DOC_GEN_COLLECTION_NAME": "STORYBOOK_REACT_CLASSES" }],
+      ]
+    },
+    "production": {
+      "plugins": [
+        ["transform-object-rest-spread"],
+        ["transform-react-display-name"]
+      ]
+    }
+  }
 }
