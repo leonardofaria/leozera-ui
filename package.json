@@ -67,7 +67,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.1.4",
     "node-sass": "^4.7.2",
-    "postcss-loader": "^2.0.10",
+    "postcss-loader": "^2.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "resolve-url-loader": "^2.2.1",
