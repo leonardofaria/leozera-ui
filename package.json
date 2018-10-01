@@ -30,7 +30,7 @@
     "react-dom": "^16.2.0"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.6"
   },
   "devDependencies": {
     "@storybook/addon-centered": "^3.3.11",
