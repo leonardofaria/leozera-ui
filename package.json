@@ -33,7 +33,7 @@
     "classnames": "^2.2.5"
   },
   "devDependencies": {
-    "@storybook/addon-centered": "^3.3.11",
+    "@storybook/addon-centered": "^4.0.8",
     "@storybook/addon-info": "^3.3.11",
     "@storybook/addon-knobs": "^3.3.11",
     "@storybook/addon-options": "^3.3.11",
