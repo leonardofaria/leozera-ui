@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    environment:
+      CC_TEST_REPORTER_ID: a09556874a5baeff3caaa1627e5df4be0b7674173bd592552a5345e3e6db3ab7
+
     docker:
       - image: circleci/node:latest
 
@@ -13,6 +16,13 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "yarn.lock" }}
 
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+          # download test reporter as a static binary
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+
       - run: yarn install
 
       - save_cache:
@@ -20,6 +30,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
-      - run: yarn test:ci
+      - run:
+          name: Run tests
+          command: |
+          # notify Code Climate of a pending test report using `before-build`
+            ./cc-test-reporter before-build
+            yarn test:ci
+          # upload test report to Code Climate using `after-build`
+            ./cc-test-reporter after-build -t lcov --exit-code $?
 
       - run: yarn release
