@@ -10,7 +10,6 @@
     "start": "yarn storybook",
     "storybook": "start-storybook -p 6006 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o docs",
-    "deploy:github": "gh-pages -d docs",
     "deploy": "yarn storybook:build && yarn deploy:github",
     "test": "jest",
     "test:ci": "jest && codecov",
