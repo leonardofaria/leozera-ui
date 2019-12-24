@@ -1,6 +1,6 @@
 module.exports = {
   rootDir: 'lib',
-  coverageDirectory: './coverage',
+  coverageDirectory: '../coverage',
   collectCoverage: true,
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy',
@@ -9,4 +9,4 @@ module.exports = {
     '<rootDir>/shims.js',
     '<rootDir>/jest.setup.js',
   ],
-}
+};
