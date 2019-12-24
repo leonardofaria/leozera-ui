@@ -22,8 +22,9 @@
     "build:js": "NODE_ENV=production babel lib/components -d dist --ignore '**/*.spec.js,**/*.stories.js'",
     "build:css": "node scripts/buildSass.js",
     "build:copy-files": "node scripts/copyBuildFiles.js",
-    "publish": "yarn build:lib",
-    "release": "semantic-release"
+    "publish": "yarn build:lib && npm publish dist",
+    "release": "yarn build:lib && semantic-release",
+    "postpublish": "git push origin master --tags"
   },
   "peerDependencies": {
     "react": "^16.12.0",
