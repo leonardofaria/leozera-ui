@@ -23,8 +23,7 @@
     "build:css": "node scripts/buildSass.js",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "publish": "yarn build:lib && npm publish dist",
-    "release": "yarn build:lib && semantic-release",
-    "postpublish": "git push origin master --tags"
+    "release": "yarn build:lib && semantic-release"
   },
   "peerDependencies": {
     "react": "^16.12.0",
