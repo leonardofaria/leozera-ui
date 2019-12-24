@@ -22,9 +22,6 @@ module.exports = function (api) {
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-do-expressions',
     '@babel/plugin-proposal-export-default-from',
-    '@babel/plugin-proposal-optional-chaining',
-    'macros',
-    'babel-plugin-extract-react-types',
   ];
 
   const env = {
