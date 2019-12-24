@@ -17,6 +17,7 @@
     "test:watch": "yarn test --watch",
     "test:coverage": "yarn test --coverage",
     "lint:js": "eslint lib",
+    "lint:css": "sass-lint -v -q 'lib/**/*.scss' --max-warnings 0",
     "build:lib": "yarn build:js && yarn build:webpack && yarn build:css && yarn build:copy-files",
     "build:webpack": "NODE_ENV=production webpack -p",
     "build:js": "NODE_ENV=production babel lib/components -d dist --ignore '**/*.spec.js,**/*.stories.js'",
@@ -73,8 +74,10 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
@@ -86,5 +89,14 @@
     "style-loader": "^1.1.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.scss": "sass-lint -v -q --max-warnings 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
