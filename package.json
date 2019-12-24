@@ -18,8 +18,8 @@
     "test:coverage": "yarn test --coverage",
     "lint:js": "eslint lib",
     "build:lib": "yarn build:js && yarn build:webpack && yarn build:css && yarn build:copy-files",
-    "build:webpack": "NODE_ENV=production webpack",
-    "build:js": "cross-env NODE_ENV=production babel lib/components -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "build:webpack": "NODE_ENV=production webpack -p",
+    "build:js": "NODE_ENV=production babel lib/components -d dist --ignore '**/*.spec.js,**/*.stories.js'",
     "build:css": "node scripts/buildSass.js",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "publish": "yarn version && yarn build:lib && npm publish dist",
@@ -61,7 +61,6 @@
     "babel-plugin-macros": "^2.7.1",
     "babel-plugin-transform-rename-import": "^2.3.0",
     "codecov": "^3.6.1",
-    "cross-env": "^6.0.3",
     "css-loader": "^3.4.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
@@ -85,6 +84,7 @@
     "sass-lint": "^1.13.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.1",
-    "webpack": "^4.41.4"
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
   }
 }

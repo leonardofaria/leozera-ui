@@ -1,5 +1,5 @@
-const webpack = require('webpack')
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   entry: path.resolve(__dirname, './lib/components/index.js'),
@@ -37,9 +37,10 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: '[local]__[hash:base64:5]',
+              modules: {
+                localIdentName: '[local]_[hash:base64:5]',
+              },
+              sourceMap: true,
             },
           },
           {
@@ -75,4 +76,4 @@ module.exports = {
     },
     'react-dom': 'react-dom',
   },
-}
+};
