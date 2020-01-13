@@ -48,7 +48,7 @@
     "@semantic-release/npm": "^5.3.5",
     "@semantic-release/release-notes-generator": "^7.3.5",
     "@storybook/addon-centered": "^5.2.8",
-    "@storybook/addon-info": "^5.2.8",
+    "@storybook/addon-info": "^5.3.1",
     "@storybook/addon-knobs": "^5.2.8",
     "@storybook/addon-options": "^5.2.8",
     "@storybook/addons": "^5.2.8",
