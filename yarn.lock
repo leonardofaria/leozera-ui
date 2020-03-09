@@ -5495,10 +5495,10 @@ eslint-config-airbnb@^18.0.1:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-leozera@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/eslint-config-leozera/-/eslint-config-leozera-1.0.3.tgz#08d18bf64e53ed7652722b74f8f732271ebdf932"
-  integrity sha512-k0lTyvJ4br50+aZYPwVr83GYfuQjG8iMQK93v+pcPf/Qu8Ohxv3YJ2vTede2DQLAG0yXBJ8iQUvgXqRjP0uOBg==
+eslint-config-leozera@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-leozera/-/eslint-config-leozera-1.0.5.tgz#4f7ee1557d4c2b06f3899e98f04e70dd2d1b904c"
+  integrity sha512-5PiLEKJOecUN97yAea96425awVk6hv04j1E49MMQ1tVu/yBt6lN/5aYuCMvUXOgB/P1HxvO5wEupttFkAXpH1g==
 
 eslint-config-prettier@^6.9.0:
   version "6.9.0"
