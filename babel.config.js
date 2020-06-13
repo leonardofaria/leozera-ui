@@ -1,5 +1,5 @@
-// eslint-disable-next-line func-names
-module.exports = function (api) {
+// eslint-disable-next-line
+module.exports = function(api) {
   api.cache(true);
 
   const presets = ['@babel/react'];
@@ -17,9 +17,7 @@ module.exports = function (api) {
     presets.push('@babel/preset-env');
   }
 
-  const plugins = [
-    '@babel/plugin-proposal-export-default-from',
-  ];
+  const plugins = ['@babel/plugin-proposal-export-default-from'];
 
   const env = {
     production: {
